@@ -8,6 +8,9 @@ export interface GenericHTMLProps extends BaseComponent {
   optionalClass?: string;
 }
 
+/**
+ * GenericHTML component uses RichText from the SiteCore JSS package. Richtext can render anchor tags, which use the Next Router (Link) component.
+ */
 const GenericHTML = (props: GenericHTMLProps) => {
   const { id, dataCy, optionalClass, htmlContent } = props;
   return (
