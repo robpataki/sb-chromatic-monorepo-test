@@ -1,0 +1,20 @@
+{
+  "folders": [
+    {
+      "name": "ROOT",
+      "path": "../"
+    },
+    {
+      "name": "project-a",
+      "path": "../apps/project-a"
+    },
+    {
+      "name": "project-b",
+      "path": "../apps/project-b"
+    }
+  ],
+  "settings": {
+    "jest.disabledWorkspaceFolders": ["ROOT", "tsconfig"],
+    "jest.runMode": "on-demand"
+  }
+}

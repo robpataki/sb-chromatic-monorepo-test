@@ -1,0 +1,48 @@
+@mixin rich-user-content() {
+  margin: 0.5rem;
+  box-sizing: border-box;
+
+  & > * {
+    &,
+    li {
+      word-break: break-word;
+    }
+
+    p {
+      margin: 1.4rem 0;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      margin: 0.1rem 0;
+    }
+
+    a {
+      font-size: inherit;
+      line-height: inherit;
+      font-weight: inherit;
+    }
+
+    ul,
+    ol {
+      padding-left: 3rem;
+      margin: 1.4rem 0;
+    }
+
+    ul {
+      list-style: initial;
+    }
+
+    ol {
+      list-style: numbers;
+    }
+  }
+}
+
+.content {
+  @include rich-user-content;
+}
