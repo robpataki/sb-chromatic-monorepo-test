@@ -1,0 +1,68 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "globalDependencies": [
+    "**/.env.*local"
+  ],
+  "globalEnv": [
+    "NEXT_RUNTIME"
+  ],
+  "tasks": {
+    "bootstrap": {
+      "cache": false
+    },
+    "bootstrap:ci": {
+      "cache": false
+    },
+    "build": {
+      "dependsOn": [
+        "^build"
+      ],
+      "outputs": [
+        ".next/**",
+        "!.next/cache/**",
+        "storybook-static/**",
+        "dist/**"
+      ]
+    },
+    "check-types": {
+      "dependsOn": [
+        "^check-types"
+      ]
+    },
+    "build:ci": {
+      "dependsOn": [
+        "^build:ci"
+      ],
+      "outputs": [
+        ".next/**",
+        "!.next/cache/**",
+        "storybook-static/**",
+        "dist/**"
+      ]
+    },
+    "clean": {
+      "cache": false
+    },
+    "dev": {
+      "cache": false,
+      "persistent": true
+    },
+    "lint": {},
+    "lint:ci": {},
+    "pre-push": {},
+    "pre-commit": {},
+    "test": {},
+    "test:ci": {},
+    "test:watch": {
+      "cache": false
+    },
+    "test:component": {},
+    "test:component:ci": {},
+    "test:e2e": {
+      "passThroughEnv": [
+        "CYPRESS_*"
+      ]
+    },
+    "storybook-a11y-test:ci": {}
+  }
+}
