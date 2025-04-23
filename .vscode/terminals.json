@@ -1,0 +1,37 @@
+{
+  "autorun": false,
+  "terminals": [
+    {
+      "name": "Turbo root",
+      "open": true
+    },
+    {
+      "name": "Project A / Next",
+      "open": true,
+      "commands": [
+        "cd ./apps/project-a"
+      ]
+    },
+    {
+      "name": "Project A / Storybook",
+      "open": true,
+      "commands": [
+        "cd ./apps/project-a"
+      ]
+    },
+    {
+      "name": "Project B / Next",
+      "open": true,
+      "commands": [
+        "cd ./apps/project-b"
+      ]
+    },
+    {
+      "name": "Project B / Storybook",
+      "open": true,
+      "commands": [
+        "cd ./apps/project-b"
+      ]
+    }
+  ]
+}
